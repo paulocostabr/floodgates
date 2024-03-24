@@ -104,16 +104,18 @@ function createBar(var_name = 'Your Name', var_avatar = '', var_instagram_name =
 
     }, 400)
 
-    var cssId = 'myCss'; 
-    if (!document.getElementById(cssId))
-    {
-        var head  = document.getElementsByTagName("typebot-standard")[0].shadowRoot.querySelector('.typebot-container');
-        var link  = document.createElement('link');
-        link.id   = cssId;
-        link.rel  = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'https://igorlemoes.com.br/files/instagram/style_instagram_101023_v_001.css'; // Replace with desired CSS URL
-        link.media = 'all';
-        head.appendChild(link);
+    var cssId = 'myCss';
+if (!document.getElementById(cssId)) {
+    var head  = document.getElementsByTagName("typebot-standard")[0].shadowRoot.querySelector('.typebot-container');
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://raw.githubusercontent.com/paulocostabr/floodgates/7a2afaa748e37ebf94a88c9ff020b8375b3cb95f/events.js?token=GHSAT0AAAAAACPUMDVR4UXDS2PE5ZOU2JW6ZQATC4A'; 
+    link.media = 'all';
+    head.appendChild(link);
+}
+
+
     }
 }
